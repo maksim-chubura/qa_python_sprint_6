@@ -6,6 +6,8 @@ class HomePageLocators:
     LOGO_YANDEX = (By.XPATH, "//*[contains(@class, 'Header_LogoYandex')]")
     LOGO_SCOOTER = (By.XPATH, "//*[contains(@class, 'Header_LogoScooter')]")
     ORDER_STATUS_BUTTON = (By.XPATH, "//button[text()='Статус заказа']")
+    ORDER_BUTTON_UP = (By.CSS_SELECTOR, "div.Header_Nav__AGCXC button.Button_Button__ra12g")
+    ORDER_BUTTON_DOWN = (By.CSS_SELECTOR, "div.Home_FinishButton__1_cWm button.Button_Button__ra12g")
     FAQ = (By.XPATH, "//div[text()='Вопросы о важном']")
 
     QUESTION_HOW_MUCH = (By.ID, "accordion__heading-0")

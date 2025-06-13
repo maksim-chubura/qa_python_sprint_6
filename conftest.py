@@ -1,11 +1,11 @@
 import pytest
+from urls import Urls
 from selenium import webdriver
-from selenium.webdriver.support import expected_conditions as EC
 
 
 @pytest.fixture
 def driver():
     driver = webdriver.Firefox()
-    driver.get("https://qa-scooter.praktikum-services.ru/")
+    driver.get(Urls.MAIN_PAGE)
     yield driver
     driver.quit()

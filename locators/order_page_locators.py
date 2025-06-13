@@ -2,8 +2,6 @@ from selenium.webdriver.common.by import By
 
 class OrderPageLocators:
 
-    ORDER_BUTTON_UP = (By.CSS_SELECTOR, "div.Header_Nav__AGCXC button.Button_Button__ra12g")
-    ORDER_BUTTON_DOWN = (By.CSS_SELECTOR, "div.Home_FinishButton__1_cWm button.Button_Button__ra12g")
     NAME = (By.XPATH, "//input[@placeholder='* Имя']")
     LAST_NAME = (By.XPATH, "//input[@placeholder='* Фамилия']")
     ADDRESS = (By.XPATH, "//input[@placeholder='* Адрес: куда привезти заказ']")
