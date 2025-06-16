@@ -9,7 +9,7 @@ class TestYandexLogo:
         home = HomePage(driver)
         home.click_popup_button()
         home.click_yandex_logo()
-        home.is_dzen_page_opened()
+        assert home.is_dzen_page_opened(), "Страница Дзен не открыта"
 
 class TestScooterLogo:
     @allure.title("Клик по логотипу Cамокат открывает главную страницу")
@@ -18,7 +18,7 @@ class TestScooterLogo:
         home.click_popup_button()
         home.click_button_order_up()
         home.click_scooter_logo()
-        home.is_main_page_opened()
+        assert home.is_main_page_opened(), "Главная страница Самокат не открыта"
 
 class TestFaqSection:
 

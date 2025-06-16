@@ -2,7 +2,6 @@ import allure
 from locators.home_page_locators import HomePageLocators
 from selenium.common.exceptions import TimeoutException
 from pages.base_page import BasePage
-from config import QUESTIONS_AND_ANSWERS
 
 class HomePage(BasePage):
     # Конструктор класса

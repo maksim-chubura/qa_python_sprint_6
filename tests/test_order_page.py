@@ -35,4 +35,4 @@ class TestOrder:
         order.complete_order()
         order.confirm_order()
         order.click_button_yes()
-        order.is_order_successful()
+        assert order.is_order_successful(), "Заказ не создан"

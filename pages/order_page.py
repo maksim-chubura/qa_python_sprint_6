@@ -1,7 +1,6 @@
 import allure
 from selenium.webdriver.common.keys import Keys
 from locators.order_page_locators import OrderPageLocators
-from locators.home_page_locators import HomePageLocators
 from pages.base_page import BasePage
 
 class OrderPage(BasePage):
@@ -92,6 +91,6 @@ class OrderPage(BasePage):
     @allure.step("Окно с сообщением об успешном создании заказа")
     def is_order_successful(self):
         try:
-            return "Заказ оформлен" in self.wait_for_visibility(OrderPageLocators.ORDER_CONFIRMATION).text
+            return "Заказ оформлен" in self.wait_for_visibility(OrderPageLocators.ORDER_PLACED).text
         except:
             return False
